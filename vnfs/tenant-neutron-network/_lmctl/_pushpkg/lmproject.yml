@@ -1,0 +1,10 @@
+name: tenant-neutron-network
+vnfcs:
+  definitions:
+    tenant-network-vnfc:
+      directory: tenant-network-vnfc
+  packages:
+    ansible-rm-vnfcs:
+      packaging-type: ansible-rm
+      executions:
+      - vnfc: tenant-network-vnfc
