@@ -1,0 +1,10 @@
+name: neutron-router
+vnfcs:
+  definitions:
+    neutron-router-vnfc:
+      directory: neutron-router-vnfc
+  packages:
+    ansible-rm-vnfcs:
+      packaging-type: ansible-rm
+      executions:
+      - vnfc: neutron-router-vnfc

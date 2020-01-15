@@ -1,0 +1,22 @@
+{
+    "name": "testTenantNetwork",
+    "projectId": "assembly::tenant-neutron-network::1.0",
+    "description": null,
+    "stages": [
+        {
+            "name": "Default Stage",
+            "steps": []
+        }
+    ],
+    "assemblyActors": [
+        {
+            "instanceName": "testnetwork",
+            "initialState": "Active",
+            "uninstallOnExit": true,
+            "provided": false,
+            "assemblyConfigurationRef": "testnetwork"
+        }
+    ],
+    "createdAt": "2020-01-15T09:24:43.895Z",
+    "lastModifiedAt": "2020-01-15T09:31:00.078Z"
+}
