@@ -51,3 +51,15 @@ composition:
         value: ${mgmt_network.subnetid}
     type: assembly::neutron-router::0.1
     quantity: 1
+jumphost:
+    properties:
+        deploymentLocation:
+        value: ${mgmt_router.deploymentLocation}
+        resourceManager:
+        value: ${resourceManager}
+        networkid:
+        value: ${mgmt_network.networkid}
+        keyname:
+        value: ${keyname}
+    type: assembly::jumphost::0.1
+    quantity: 1
