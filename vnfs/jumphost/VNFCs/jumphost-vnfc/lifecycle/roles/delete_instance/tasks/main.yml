@@ -1,0 +1,11 @@
+---
+
+- name: remove jumphost virtual machine
+  os_server:
+    state: absent
+    name: "{{ jumphostname }}"
+
+- name: remove security group
+  os_security_group:
+    state: absent
+    name: "{{ jumphostname }}"
