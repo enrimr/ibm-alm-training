@@ -26,6 +26,18 @@ properties:
     type: read_only
     read-only: true
     value: ${common.mgmt_securitygroup_id}
+  jumphost_ip:
+    type: string
+    read-only: true
+    value: ${jumphost.jumphost_ip}
+  jumphost_username:
+    type: string
+    read-only: true
+    value: ${jumphost.jumphost_username}
+  jumphost_password:
+    type: string
+    read-only: true
+    value: ${jumphost.jumphost_password}
 composition:
   mgmt_network:
     properties:
@@ -50,4 +62,16 @@ composition:
       interface:
         value: ${mgmt_network.subnetid}
     type: assembly::neutron-router::0.1
+    quantity: 1
+  jumphost:
+    properties:
+      deploymentLocation:
+        value: ${mgmt_router.deploymentLocation}
+      resourceManager:
+        value: ${resourceManager}
+      networkid:
+        value: ${mgmt_network.networkid}
+      keyname:
+        value: ${keyname}
+    type: assembly::jumphost::0.1
     quantity: 1
