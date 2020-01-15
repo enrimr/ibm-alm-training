@@ -1,4 +1,4 @@
-name: assembly::neutron-neutron-router::0.1
+name: assembly::neutron-router::0.1
 description: Neutron Router VNF
 properties:
   deploymentLocation:
