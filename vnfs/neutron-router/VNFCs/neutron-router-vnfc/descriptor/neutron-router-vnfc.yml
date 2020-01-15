@@ -1,4 +1,4 @@
-name: resource::router-vnfc::0.1
+name: resource::neutron-router-vnfc::0.1
 description: Neutron Router VNFC
 
 properties:
