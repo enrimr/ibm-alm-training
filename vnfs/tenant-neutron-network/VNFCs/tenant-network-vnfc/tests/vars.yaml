@@ -1,6 +1,0 @@
-almip: "192.168.61.180"
-os_auth_url: "http://172.18.2.58:5000/v3"
-os_password: "TSL.Dem0s"
-os_projectname: "training3"
-os_username: "training3"
-networkname: "testnetwork"

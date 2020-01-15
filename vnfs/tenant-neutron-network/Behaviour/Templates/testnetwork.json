@@ -1,0 +1,11 @@
+{
+    "name": "testnetwork",
+    "projectId": "assembly::tenant-neutron-network::1.0",
+    "description": null,
+    "descriptorName": "assembly::tenant-neutron-network::1.0",
+    "properties": {
+        "deploymentLocation": "openstackTraining"
+    },
+    "createdAt": "2020-01-15T09:23:50.649Z",
+    "lastModifiedAt": "2020-01-15T09:34:15.908Z"
+}
